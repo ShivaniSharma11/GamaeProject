@@ -10,27 +10,30 @@
 * If you'll kill all enemies the you'll win the game.
 
 ## Research
-* Space Invaders is a 1978 shoot up arcade game.
-* Which was developed by Tomohiro Nishikado. 
-* It was manufactured and sold by Taito in Japan.
-* These games were machine based games in earlier days then it comes in computer version.
-* As the years passed computer it developed and came into phones too.
-* Space invadors is the game that was easy to play in normal button handsets.
-* When the time increased the touch mobiles made it easy to play.
-* Music is also used in the games to make it more motivational so player can focus on it.
+* In this paper author has developed a model for COVID-19 detection using Chest X-ray images. Developed a model using DarkNet model using YOLO and achieved an accuracy of 98.08% for binary classification and 87.02% for multi-class classification.(https://doi.org/10.1016/j.cmpb.2020.105581)
 
+* In this paper author has developed a model for COVID19 classification using chest X-ray images. He took different images of  tuberculosis (TB), pneumonia , COVID-19 and normal. Used a model called DenseNet-161 and achieved  an accuracy of 98.9%.(doi: https://doi.org/10.1101/2020.06.21.20136598)
+
+* In this paper authors has used 5 pretrained models for covid detection using chest X-ray images of bacterial pneumonia, normal ,COVId-19 and ,viral pneumonia. They achieved the best accuracy on ResNet50 of 99.7%. (arXiv:2003.10849v3)
+
+* In this paper they tried to detect COVID‐19 detection using chest x‐ ray images using deep convolutional neural networks (DCNN). The dataset contained images COVID-19, Viral pneumonia and Normal Chest X-ray Images.They used a Inception V3 with transfer learning for detection anc achieved an accuracy more than 98%(https://doi.org/10.1101/2020.05.01.20088211)
+
+* In this paper author has used different pre-trained models  ResNet19, denseNet-121, ResNet50 and SqueezNet for COVID19 detection using chest X-ray and CT scan images. In which they achieved the best accuracy of 97.5%.(https://doi.org/10.1016/j.cmpb.2020.105581)
+
+* In this paper authors has developed multi model for COVID-19 diagnosis using  CT scan images and X-Ray images. They used two pretrained models ResNet-50 and VGG-16 for diagnosis and achieved 95.38% of accuracy in CT scan images and 98.97% of accuracy in X-Ray images.(doi:10.1016/j.compbiomed.2020.103792)
 
 ## Cost and Features and Timeline
 
-Feature  | Cost  | Timeline 
--------- | ----- | --------
-Main function | 0 | 1 day
-Enemies | 0 | 1 day
-Hero | 0 | 1 day
-Generator | 0 | 1 day
-Rocket | 0 | 1 day
-Kills | 0 | 1 day
-Movement | 0 | 1 day
+* This disease came into at the end of 2019 and still its all over the world. 
+* This is basically affecting the lungs in severe cases and turning into viral pneumonia.
+* People found a manual way in 2020 for its detection which was taking 2-3 days for detection.
+* Then people tried to find more alternative and fast solutions then detection of COVID19 started by using CT Scan and XRay images.
+* As CT Scan is costlier than X-Ray images so some people can afford only X-Rays.
+* So we tried to diagnose using CT Scan images and X-Ray images. 
+* Doctors then analyse those images and try to find whether a person is affected from COVID19 or not. 
+
+* This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
+
 
 ## SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
