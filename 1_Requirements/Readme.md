@@ -47,7 +47,7 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 
 * In this paper author has used different pre-trained models  ResNet19, denseNet-121, ResNet50 and SqueezNet for COVID19 detection using chest X-ray and CT scan images. In which they achieved the best accuracy of 97.5%.(https://doi.org/10.1016/j.cmpb.2020.105581)
 
-* In this paper authors has developed multi model for COVID-19 diagnosis using  CT scan images and X-Ray images. They used two pretrained models ResNet-50 and VGG-16 for diagnosis and achieved 95.38% of accuracy in CT scan images and 98.97% of accuracy in X-Ray images.(doi:10.1016/j.compbiomed.2020.103792)
+* In this paper authors has developed multi model for COVID-19 diagnosis using  CT scan images and X-Ray images. They used two pretrained models ResNet-50 and VGG-16 for diagnosis and achieved 95.38% of accuracy in CT scan images and 98.97% of accuracy in X-Ray images.(https://doi:10.1016/j.compbiomed.2020.103792)
 
 ## Cost and Features and Timeline
 
