@@ -60,25 +60,26 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 * Doctors then analyse those images and try to find whether a person is affected from COVID19 or not. 
 
 * This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
+
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Covid-19-and-X-Ray.jpg)
 
 # SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
 
 # 4W's and 1'H
-# Who:
+## Who:
 This project can be used in hospitals which will give a relief to doctors and saves the time of doctors as well patients.
 
-# Where:
+## Where:
 This can be used in hospitals, Industries by using the body scanners, Airports etc for a quick test. 
 
-# When:
+## When:
 It can be used at any time to check whether a person is affected from COVID-19 or not. 
 
-# What:
+## What:
 They can play this game and enjoy the free time by winning the game.  
 
-# How:
+## How:
 * These steps are temporary for now as it is just an application that is developed partially. 
 * 1. Download this game from the github
 * 2. Unzip the file.
@@ -91,7 +92,7 @@ They can play this game and enjoy the free time by winning the game.
 
 # Detail requirements
 
-# High Level Requirements:
+## High Level Requirements:
 
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
@@ -101,7 +102,7 @@ ID | Description | Status(Implemented / Future)
 04 |  Train the Model | Implemented
 05 |  Test the Model  | Implemented
 
-# Low level Requirements
+## Low level Requirements
 
 
 ID | Description | Status(Implemented / Future)
