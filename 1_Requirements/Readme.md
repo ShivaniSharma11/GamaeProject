@@ -32,6 +32,7 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 1. In CNN Large volume of data is required with more hyper-parameter tuning to extract optimal features.
 2. Robust accuracy on smaller dataset.
 
+![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/images.jpg)
 
 
 ## Research
