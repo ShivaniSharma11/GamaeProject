@@ -1,4 +1,4 @@
-### Requirements
+# Requirements
 
 ## Introduction
 
@@ -23,11 +23,11 @@ Phase 3 –In phase 3 some serious symptoms are:
      
 As the number of coronavirus patients are increasing day by day then we need a fast and efficient method to diagnose a patient. Artificial Intelligence is the best solution for diagnosis. 
 
-# Problem Statement 
+### Problem Statement 
 Availability of dataset is the main issue whenever a new disease comes. The predictions can’t be made on small dataset which might not give the accurate results.Through this model we can also make predictions using less dataset also with robust accuracy.
 Developing and Implementing a Model which will give robust predictions on a smaller dataset.
 
-# Objective and Challenges 
+### Objective and Challenges 
 Design an efficient CNN based Deep learning Combined Model for X-Ray images and CT Images. 
 1. In CNN Large volume of data is required with more hyper-parameter tuning to extract optimal features.
 2. Robust accuracy on smaller dataset.
