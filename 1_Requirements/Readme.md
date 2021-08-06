@@ -1,6 +1,6 @@
 # Requirements
 
-## Introduction
+# Introduction
 
 Coronavirus disease (COVID-19) is a newly found coronavirus-caused infectious disease. Most people infected with the COVID-19 virus will experience mild to moderate respiratory disease and recover without any special treatment being required. Elderly people as well as those with underlying health problems such as diabetes, chronic respiratory disease, heart disease are diseases that can cause a severe illness . It is affects in different ways to different people .Many people can have mild to moderate illness and they can recover without any treatment. COVID-19 is divided into 3 phases [1] : -
 Phase 1 - In phase 1 common symptoms are:
@@ -60,46 +60,56 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 * This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
 
 
-## SWOT ANALYSIS
+# SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
 
-## 4W's and 1'H
+# 4W's and 1'H
 # Who:
- Single Player can play it of any age. All people are welcome.
+This project can be used in hospitals which will give a relief to doctors and saves the time of doctors as well patients.
+
 # Where:
-Anywhere in mobile or laptop or at any place.
+This can be used in hospitals, Industries by using the body scanners, Airports etc for a quick test. 
+
 # When:
-Anytime they can play it.
+It can be used at any time to check whether a person is affected from COVID-19 or not. 
+
 # What:
 They can play this game and enjoy the free time by winning the game.  
+
 # How:
 * These steps are temporary for now as it is just an application that is developed partially. 
 * 1. Download this game from the github
 * 2. Unzip the file.
-* 3. Open your Pycharm or Visual Studio code.
-* 4. Open the file in the IDE.
-* 5. Download all needed modules using terminal.
-* 6. Command to download the module is  - " pip install packagename ".
-* 7. CLick on run 
-* 8. play the game by using following keys : - 
-      * Right arrow key to move right side
-      * Left arrow key to move left side
-      * Spacebar to shoot bullets or rockets
-* 9. Kill all enemies and win the game.
+* 3. Open this file in Pycharm or Google Colab etc.
+* 4. If it is opened in Google colab then no need to download the modules otherwise download modules using terminal.
+* 5. Command to download the module is  - " pip install packagename ".
+* 6. Download the dataset and save it into your system and change the path in the code as per your dataset location.
+* 7. Run the code and train the model. 
+* 8. You'll get the output.
 
-## Detail requirements
+# Detail requirements
+
 # High Level Requirements:
 
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
-01 |  | 
-02 |  |
-
+01 |  Load dataset of images from the path | Implemented  
+02 |  Preprocessing of each image | Implemented
+03 |  Split the data into Test and train | Implemented
+04 |  Train the Model | Implemented
+05 |  Test the Model  | Implemented
 
 # Low level Requirements
 
 
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
-01 |  | 
-02 |  |
+01 | Load dataset of images from the path | Implemented
+02 | Preprocessing of each image | Implemented
+03 | Rescaling of each image | Implemented
+04 | labeling each image | Implemented 
+05 | Split the data into Test and Train | Implemented
+06 | Train the Model | Implemented
+07 | Save the best Model | Implemented
+08 | Test the Model | Implemented 
+
