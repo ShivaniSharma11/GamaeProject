@@ -33,6 +33,7 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 2. Robust accuracy on smaller dataset.
 
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/images.jpg)
+
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/images%20(1).jpg)
 
 ## Research
