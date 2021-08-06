@@ -3,10 +3,12 @@
 ## Introduction
 * This is a single player game.
 * In which it contains enemies and a hero.
- The hero will kill the enemies using rockets that is bullets.
- He or she has to kill all the enemies so that they can't cross the border. 
- Hero has to shoot the rockets to the enemies to kill them. 
- When the bullet or rocket will touch the enemy they will vanish and others will come in sequence only.
+* The hero will kill the enemies using rockets that is bullets.
+* He or she has to kill all the enemies so that they can't cross the border. 
+* Hero has to shoot the rockets to the enemies to kill them. 
+* When the bullet or rocket will touch the enemy they will vanish and others will come in sequence only.
+* If you'll kill all enemies the you'll win the game.
+
 ## Research
 ## Cost and Features and Timeline
 ## SWOT ANALYSIS
