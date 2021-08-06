@@ -1,13 +1,39 @@
 ### Requirements
 
 ## Introduction
-* This is a single player game.
-* In which it contains enemies and a hero.
-* The hero will kill the enemies using rockets that is bullets.
-* He or she has to kill all the enemies so that they can't cross the border. 
-* Hero has to shoot the rockets to the enemies to kill them. 
-* When the bullet or rocket will touch the enemy they will vanish and others will come in sequence only.
-* If you'll kill all enemies the you'll win the game.
+
+Coronavirus disease (COVID-19) is a newly found coronavirus-caused infectious disease. Most people infected with the COVID-19 virus will experience mild to moderate respiratory disease and recover without any special treatment being required. Elderly people as well as those with underlying health problems such as diabetes, chronic respiratory disease, heart disease are diseases that can cause a severe illness . It is affects in different ways to different people .Many people can have mild to moderate illness and they can recover without any treatment. COVID-19 is divided into 3 phases [1] : -
+Phase 1 - In phase 1 common symptoms are:
+     * Fever
+     * Dry Cough
+     * Tiredness
+Phase 2 - In phase 2 common symptoms are:
+     * Pains and aches
+     * Sore throat
+     * Diarrhoea
+     * Conjunctivitis
+     * Headache
+     * Loss of taste or smell
+     * A rash on skin, or discolouration of fingers or toes
+Phase 3 –In phase 3 some serious symptoms are:
+     * Difficulty in breathing
+     * Pain in chest or Chest Pressue
+     * Loss of speech
+     * Loss of movement
+     
+As the number of coronavirus patients are increasing day by day then we need a fast and efficient method to diagnose a patient. Artificial Intelligence is the best solution for diagnosis. 
+
+# Problem Statement - Availability of dataset is the main issue whenever a new disease comes. The predictions can’t be made on small dataset which might not give the accurate results.Through this model we can also make predictions using less dataset also with robust accuracy.
+Developing and Implementing a Model which will give robust predictions on a smaller dataset.
+
+# Objective and Challenges - 
+Design an efficient CNN based Deep learning Combined Model for X-Ray images and CT Images. 
+1. In CNN Large volume of data is required with more hyper-parameter tuning to extract optimal features.
+2. Robust accuracy on smaller dataset.
+
+
+
+
 
 ## Research
 * In this paper author has developed a model for COVID-19 detection using Chest X-ray images. Developed a model using DarkNet model using YOLO and achieved an accuracy of 98.08% for binary classification and 87.02% for multi-class classification.(https://doi.org/10.1016/j.cmpb.2020.105581)
