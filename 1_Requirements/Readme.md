@@ -59,7 +59,7 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 * Doctors then analyse those images and try to find whether a person is affected from COVID19 or not. 
 
 * This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
-
+![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Covid-19-and-X-Ray.jpg)
 
 # SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
