@@ -22,6 +22,16 @@
 
 ## Cost and Features and Timeline
 
+Feature  | Cost  | Timeline 
+-------- | ----- | --------
+Main function | 0 | 1 day
+Enemies | 0 | 1 day
+Hero | 0 | 1 day
+Generator | 0 | 1 day
+Rocket | 0 | 1 day
+Kills | 0 | 1 day
+Movement | 0 | 1 day
+
 ## SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
 
@@ -54,7 +64,14 @@ They can play this game and enjoy the free time by winning the game.
 
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
-01 |  | Implemented
+01 |  | 
 02 |  |
 
 
+# Low level Requirements
+
+
+ID | Description | Status(Implemented / Future)
+------------ | ------------- | ----------
+01 |  | 
+02 |  |
