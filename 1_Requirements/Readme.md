@@ -52,7 +52,9 @@ They can play this game and enjoy the free time by winning the game.
 ## Detail requirements
 # High Level Requirements:
 
-ID | Description | Status
-___ | ___________ | ______
-# Low level Requirements:
+ID | Description | Status(Implemented / Future)
+------------ | ------------- | ----------
+01 |  | Implemented
+02 |  |
+
 
