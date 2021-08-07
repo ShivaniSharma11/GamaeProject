@@ -39,6 +39,7 @@ A neural network designed to handle multidimensional data such as image and time
 
 *   Dataset for Chest X-Ray images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?)
 *   Dataset for Chest CT Scan images (https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset)
+
 ## Problem Statement 
 Availability of dataset is the main issue whenever a new disease comes. The predictions can’t be made on small dataset which might not give the accurate results.Through this model we can also make predictions using less dataset also with robust accuracy.
 Developing and Implementing a Model which will give robust predictions on a smaller dataset.
@@ -71,9 +72,7 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 *   As CT Scan is costlier than X-Ray images so some people can afford only X-Rays.
 *   So we tried to diagnose using CT Scan images and X-Ray images. 
 *   Doctors then analyse those images and try to find whether a person is affected from COVID19 or not. 
-
 *   This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
-
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Covid-19-and-X-Ray.jpg)
 
 ## SWOT ANALYSIS
