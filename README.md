@@ -6,6 +6,13 @@ Build | Code Quality | Unity | Git Inspector
 ------ | ------------ | ------ | -------------------------------------
 | ![CI](https://github.com/ShivaniSharma11/ShivaniProject/actions/workflows/main.yml/badge.svg) | [![Codacy Badge](https://app.codacy.com/project/badge/Grade/d71e4fb18170458ea3de57dfcdd8cabc)](https://www.codacy.com/gh/ShivaniSharma11/ShivaniProject/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ShivaniSharma11/ShivaniProject&amp;utm_campaign=Badge_Grade) | |
 
+## Challenges Faced and How Was It Overcome
+Challenges | Solution
+----------- | ---------
+less Dataset | Used data augumentation
+GPU | Used Google Colab which provides free GPU and TPU
+Training time | Used GPU 
+
 ## Folder Structure
 
 Folder |	Description
