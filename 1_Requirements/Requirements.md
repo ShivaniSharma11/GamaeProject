@@ -96,14 +96,14 @@ They can play this game and enjoy the free time by winning the game.
 
 ## How
 *   These steps are temporary for now as it is just an application that is developed partially. 
-*   1. Download this game from the github
-*   2. Unzip the file.
-*   3. Open this file in Pycharm or Google Colab etc.
-*   4. If it is opened in Google colab then no need to download the modules otherwise download modules using terminal.
-*   5. Command to download the module is  - " pip install packagename ".
-*   6. Download the dataset and save it into your system and change the path in the code as per your dataset location.
-*   7. Run the code and train the model. 
-*   8. You'll get the output.
+*   Download this game from the github
+*   Unzip the file.
+*   Open this file in Pycharm or Google Colab etc.
+*   If it is opened in Google colab then no need to download the modules otherwise download modules using terminal.
+*   Command to download the module is  - " pip install packagename ".
+*   Download the dataset and save it into your system and change the path in the code as per your dataset location.
+*   Run the code and train the model. 
+*   You'll get the output.
 
 ## Detail requirements
 
