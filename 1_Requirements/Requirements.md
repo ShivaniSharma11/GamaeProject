@@ -34,11 +34,11 @@ Dual Input Model is a model which takes two different models and gives a one out
 
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Dualinput.png)
 
-# Why CNN Model 
+## Why CNN Model 
 A neural network designed to handle multidimensional data such as image and time series data is called a convolutionary neural network (CNN). This involves the extraction function and weight calculation during the training process. The identity of these kind of networks shall be obtained by applying a convolution operator which is useful for the resolution of complicated tasks. The basic truth is that CNNs provide an automatic extraction feature, which is the primary advantage. The specified input data is initially forwarded to the Extraction Network feature, and the resulting extracted features are forwarded to the Classifier Network as shown .The extraction network includes loads of convolutional and pooling layers. A series of convolution filters are passed to perform an input data convolution process. The pooling layer is used as a dimensional reduction layer which defines the threshold. During back propagation, a variety of parameters must be modified, which in effect minimizes interactions within the neural network architecture.
 
-*  Dataset for Chest X-Ray images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?)
-*  Dataset for Chest CT Scan images (https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset)
+*Dataset for Chest X-Ray images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?)
+*Dataset for Chest CT Scan images (https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset)
 ## Problem Statement 
 Availability of dataset is the main issue whenever a new disease comes. The predictions can’t be made on small dataset which might not give the accurate results.Through this model we can also make predictions using less dataset also with robust accuracy.
 Developing and Implementing a Model which will give robust predictions on a smaller dataset.
