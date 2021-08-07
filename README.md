@@ -4,4 +4,6 @@
 
 Build | Code Quality | Unity | [Git Inspector]
 ------ | ------------ | ------ | -------------------------------------
-| ![](https://app.codacy.com/gh/ShivaniSharma11/ShivaniProject/dashboard?branch=master) | |
+| | |
+
+![](https://app.codacy.com/gh/ShivaniSharma11/ShivaniProject/dashboard?branch=master) 
