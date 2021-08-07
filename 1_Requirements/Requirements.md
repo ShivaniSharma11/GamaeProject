@@ -107,7 +107,7 @@ They can play this game and enjoy the free time by winning the game.
 
 ## Detail requirements
 
-## High Level Requirements:
+## High Level Requirements
 
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
