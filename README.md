@@ -16,3 +16,7 @@ Folder |	Description
 4_Test_plan and output |	Documents with test plans and procedures
 5_Report | Report of the Project
 Images | All images used in this repo
+
+
+## Resources 
+https://guides.github.com/features/mastering-markdown/
