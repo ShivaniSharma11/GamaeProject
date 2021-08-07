@@ -34,6 +34,7 @@ Availability of dataset is the main issue whenever a new disease comes. The pred
 Developing and Implementing a Model which will give robust predictions on a smaller dataset.
 
 ## Objective and Challenges 
+
 Design an efficient CNN based Deep learning Combined Model for X-Ray images and CT Images. 
 * In CNN Large volume of data is required with more hyper-parameter tuning to extract optimal features.
 * Robust accuracy on smaller dataset.
