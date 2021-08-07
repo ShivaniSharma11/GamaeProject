@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Coronavirus disease (COVID-19) is a newly found coronavirus-caused infectious disease. Most people infected with the COVID-19 virus will experience mild to moderate respiratory disease and recover without any special treatment being required. Elderly people as well as those with underlying health problems such as diabetes, chronic respiratory disease, heart disease are diseases that can cause a severe illness . It is affects in different ways to different people .Many people can have mild to moderate illness and they can recover without any treatment. COVID-19 is divided into 3 phases [1] : -
+Coronavirus disease (COVID-19) is a newly found coronavirus-caused infectious disease. Most people infected with the COVID-19 virus will experience mild to moderate respiratory disease and recover without any special treatment being required. Elderly people as well as those with underlying health problems such as diabetes, chronic respiratory disease, heart disease are diseases that can cause a severe illness . It is affects in different ways to different people .Many people can have mild to moderate illness and they can recover without any treatment. COVID-19 is divided into 3 phases : -
 
 Phase 1 - In phase 1 common symptoms are:
 
