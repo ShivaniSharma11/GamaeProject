@@ -73,7 +73,7 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
 
 # Define the System
-  Project for COVID-19 Diagnosis
+  Project for COVID-19 Diagnosis using Chest X-Ray and CT Scan images
   
 # 4W's and 1'H
 ## Who:
