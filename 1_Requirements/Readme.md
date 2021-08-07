@@ -1,6 +1,6 @@
 # Requirements
 
-# Introduction
+## Introduction
 
 Coronavirus disease (COVID-19) is a newly found coronavirus-caused infectious disease. Most people infected with the COVID-19 virus will experience mild to moderate respiratory disease and recover without any special treatment being required. Elderly people as well as those with underlying health problems such as diabetes, chronic respiratory disease, heart disease are diseases that can cause a severe illness . It is affects in different ways to different people .Many people can have mild to moderate illness and they can recover without any treatment. COVID-19 is divided into 3 phases [1] : -
 
@@ -69,10 +69,10 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Covid-19-and-X-Ray.jpg)
 
-# SWOT ANALYSIS
+## SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
 
-# Define the System
+## Define the System
   Project for COVID-19 Diagnosis using Chest X-Ray and CT Scan images
   
 # 4W's and 1'H
@@ -99,7 +99,7 @@ They can play this game and enjoy the free time by winning the game.
 * 7. Run the code and train the model. 
 * 8. You'll get the output.
 
-# Detail requirements
+## Detail requirements
 
 ## High Level Requirements:
 
