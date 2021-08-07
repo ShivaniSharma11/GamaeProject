@@ -29,6 +29,14 @@ Phase 3 –In phase 3 some serious symptoms are:
      
 As the number of coronavirus patients are increasing day by day then we need a fast and efficient method to diagnose a patient. Artificial Intelligence is the best solution for diagnosis. 
 
+## Dual Input Model 
+Dual Input Model is a model which takes two different models and gives a one output. It can take numerical data as well as Image data. There could be various combinations like we can input an Image and a Numerical data or we can input both as images or both as a numerical data. Here below is the diagram of the dual input model. In this we first can accept any image or both images and the pre process those images, do the feature Extraction and the create a dual Input model which will train on both data inputs. After training it will give an output which will be the final output.
+
+![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Dualinput.png)
+
+
+* Dataset for Chest X-Ray images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?)
+* Dataset for Chest CT Scan images (https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset)
 ## Problem Statement 
 Availability of dataset is the main issue whenever a new disease comes. The predictions can’t be made on small dataset which might not give the accurate results.Through this model we can also make predictions using less dataset also with robust accuracy.
 Developing and Implementing a Model which will give robust predictions on a smaller dataset.
