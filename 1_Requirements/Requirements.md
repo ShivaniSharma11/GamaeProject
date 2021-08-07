@@ -37,8 +37,8 @@ Dual Input Model is a model which takes two different models and gives a one out
 ## Why CNN Model 
 A neural network designed to handle multidimensional data such as image and time series data is called a convolutionary neural network (CNN). This involves the extraction function and weight calculation during the training process. The identity of these kind of networks shall be obtained by applying a convolution operator which is useful for the resolution of complicated tasks. The basic truth is that CNNs provide an automatic extraction feature, which is the primary advantage. The specified input data is initially forwarded to the Extraction Network feature, and the resulting extracted features are forwarded to the Classifier Network as shown .The extraction network includes loads of convolutional and pooling layers. A series of convolution filters are passed to perform an input data convolution process. The pooling layer is used as a dimensional reduction layer which defines the threshold. During back propagation, a variety of parameters must be modified, which in effect minimizes interactions within the neural network architecture.
 
-*Dataset for Chest X-Ray images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?)
-*Dataset for Chest CT Scan images (https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset)
+*   Dataset for Chest X-Ray images (https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia?)
+*   Dataset for Chest CT Scan images (https://www.kaggle.com/plameneduardo/sarscov2-ctscan-dataset)
 ## Problem Statement 
 Availability of dataset is the main issue whenever a new disease comes. The predictions can’t be made on small dataset which might not give the accurate results.Through this model we can also make predictions using less dataset also with robust accuracy.
 Developing and Implementing a Model which will give robust predictions on a smaller dataset.
@@ -46,8 +46,8 @@ Developing and Implementing a Model which will give robust predictions on a smal
 ## Objective and Challenges 
 
 Design an efficient CNN based Deep learning Combined Model for X-Ray images and CT Images. 
-* In CNN Large volume of data is required with more hyper-parameter tuning to extract optimal features.
-* Robust accuracy on smaller dataset.
+*   In CNN Large volume of data is required with more hyper-parameter tuning to extract optimal features.
+*   Robust accuracy on smaller dataset.
 
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/images.jpg)
 
@@ -55,24 +55,24 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 
 ## Research
 
-* In this paper author has developed a model for COVID-19 detection using Chest X-ray images. Developed a model using DarkNet model using YOLO and achieved an accuracy of 98.08% for binary classification and 87.02% for multi-class classification. (https://doi.org/10.1016/j.cmpb.2020.105581)
-* In this paper author has developed a model for COVID19 classification using chest X-ray images. He took different images of  tuberculosis (TB), pneumonia , COVID-19 and normal. Used a model called DenseNet-161 and achieved  an accuracy of 98.9%.(doi: https://doi.org/10.1101/2020.06.21.20136598)
-* In this paper authors has used 5 pretrained models for covid detection using chest X-ray images of bacterial pneumonia, normal ,COVId-19 and ,viral pneumonia. They achieved the best accuracy on ResNet50 of 99.7%. (arXiv:2003.10849v3)
-* In this paper they tried to detect COVID‐19 detection using chest x‐ ray images using deep convolutional neural networks (DCNN). The dataset contained images COVID-19, Viral pneumonia and Normal Chest X-ray Images.They used a Inception V3 with transfer learning for detection anc achieved an accuracy more than 98 (https://doi.org/10.1101/2020.05.01.20088211)
-* In this paper author has used different pre-trained models  ResNet19, denseNet-121, ResNet50 and SqueezNet for COVID19 detection using chest X-ray and CT scan images. In which they achieved the best accuracy of 97.5%.(https://doi.org/10.1016/j.cmpb.2020.105581)
-* In this paper authors has developed multi model for COVID-19 diagnosis using  CT scan images and X-Ray images. They used two pretrained models ResNet-50 and VGG-16 for diagnosis and achieved 95.38% of accuracy in CT scan images and 98.97% of accuracy in X-Ray images.(https://doi:10.1016/j.compbiomed.2020.103792)
+*   In this paper author has developed a model for COVID-19 detection using Chest X-ray images. Developed a model using DarkNet model using YOLO and achieved an accuracy of 98.08% for binary classification and 87.02% for multi-class classification. (https://doi.org/10.1016/j.cmpb.2020.105581)
+*   In this paper author has developed a model for COVID19 classification using chest X-ray images. He took different images of  tuberculosis (TB), pneumonia , COVID-19 and normal. Used a model called DenseNet-161 and achieved  an accuracy of 98.9%.(doi: https://doi.org/10.1101/2020.06.21.20136598)
+*   In this paper authors has used 5 pretrained models for covid detection using chest X-ray images of bacterial pneumonia, normal ,COVId-19 and ,viral pneumonia. They achieved the best accuracy on ResNet50 of 99.7%. (arXiv:2003.10849v3)
+*   In this paper they tried to detect COVID‐19 detection using chest x‐ ray images using deep convolutional neural networks (DCNN). The dataset contained images COVID-19, Viral pneumonia and Normal Chest X-ray Images.They used a Inception V3 with transfer learning for detection anc achieved an accuracy more than 98 (https://doi.org/10.1101/2020.05.01.20088211)
+*   In this paper author has used different pre-trained models  ResNet19, denseNet-121, ResNet50 and SqueezNet for COVID19 detection using chest X-ray and CT scan images. In which they achieved the best accuracy of 97.5%.(https://doi.org/10.1016/j.cmpb.2020.105581)
+*   In this paper authors has developed multi model for COVID-19 diagnosis using  CT scan images and X-Ray images. They used two pretrained models ResNet-50 and VGG-16 for diagnosis and achieved 95.38% of accuracy in CT scan images and 98.97% of accuracy in X-Ray images.(https://doi:10.1016/j.compbiomed.2020.103792)
 
 ## Cost and Features and Timeline
 
-* This disease came into at the end of 2019 and still its all over the world. 
-* This is basically affecting the lungs in severe cases and turning into viral pneumonia.
-* People found a manual way in 2020 for its detection which was taking 2-3 days for detection.
-* Then people tried to find more alternative and fast solutions then detection of COVID19 started by using CT Scan and XRay images.
-* As CT Scan is costlier than X-Ray images so some people can afford only X-Rays.
-* So we tried to diagnose using CT Scan images and X-Ray images. 
-* Doctors then analyse those images and try to find whether a person is affected from COVID19 or not. 
+*   This disease came into at the end of 2019 and still its all over the world. 
+*   This is basically affecting the lungs in severe cases and turning into viral pneumonia.
+*   People found a manual way in 2020 for its detection which was taking 2-3 days for detection.
+*   Then people tried to find more alternative and fast solutions then detection of COVID19 started by using CT Scan and XRay images.
+*   As CT Scan is costlier than X-Ray images so some people can afford only X-Rays.
+*   So we tried to diagnose using CT Scan images and X-Ray images. 
+*   Doctors then analyse those images and try to find whether a person is affected from COVID19 or not. 
 
-* This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
+*   This project will save one step where doctors does't need to analyse that image. This will reduce the timing and also the cost too. 
 
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Covid-19-and-X-Ray.jpg)
 
@@ -96,15 +96,15 @@ It can be used at any time to check whether a person is affected from COVID-19 o
 They can play this game and enjoy the free time by winning the game.  
 
 ## How:
-* These steps are temporary for now as it is just an application that is developed partially. 
-* 1. Download this game from the github
-* 2. Unzip the file.
-* 3. Open this file in Pycharm or Google Colab etc.
-* 4. If it is opened in Google colab then no need to download the modules otherwise download modules using terminal.
-* 5. Command to download the module is  - " pip install packagename ".
-* 6. Download the dataset and save it into your system and change the path in the code as per your dataset location.
-* 7. Run the code and train the model. 
-* 8. You'll get the output.
+*   These steps are temporary for now as it is just an application that is developed partially. 
+*   1. Download this game from the github
+*   2. Unzip the file.
+*   3. Open this file in Pycharm or Google Colab etc.
+*   4. If it is opened in Google colab then no need to download the modules otherwise download modules using terminal.
+*   5. Command to download the module is  - " pip install packagename ".
+*   6. Download the dataset and save it into your system and change the path in the code as per your dataset location.
+*   7. Run the code and train the model. 
+*   8. You'll get the output.
 
 ## Detail requirements
 
