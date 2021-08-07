@@ -19,9 +19,9 @@ Images | All images used in this repo
 
 ## Contributors List and Summary
 
-	Name | Features | Issuess Raised | Issues Resolved | No Test Cases | Test Case Pass
-	----- | -------- | ------------ | ---------------- | ------------- | -----------
-	Shivani Sharma | How to solve the style bugs | 1 | 0 |	0 | 0
+Name | Features | Issuess Raised | Issues Resolved | No Test Cases | Test Case Pass
+----- | -------- | ------------ | ---------------- | ------------- | -----------
+Shivani Sharma | How to solve the style bugs | 1 | 0 |	0 | 0
 
 ## Resources 
 https://guides.github.com/features/mastering-markdown/
