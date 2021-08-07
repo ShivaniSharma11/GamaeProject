@@ -108,7 +108,6 @@ They can play this game and enjoy the free time by winning the game.
 ## Detail requirements
 
 ## High Level Requirements
-
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
 01 |  Load dataset of images from the path | Implemented  
@@ -118,8 +117,6 @@ ID | Description | Status(Implemented / Future)
 05 |  Test the Model  | Implemented
 
 ## Low level Requirements
-
-
 ID | Description | Status(Implemented / Future)
 ------------ | ------------- | ----------
 01 | Load dataset of images from the path | Implemented
