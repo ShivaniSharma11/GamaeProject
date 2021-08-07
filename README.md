@@ -1,5 +1,5 @@
 # DUAL INPUT MODEL FOR COVID19 DETECTION
-
+![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/download.jpg)
 ## SDLC Activity Based Learning
 
 Build | Code Quality | Unity | [Git Inspector]
