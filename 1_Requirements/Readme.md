@@ -66,6 +66,9 @@ Design an efficient CNN based Deep learning Combined Model for X-Ray images and 
 # SWOT ANALYSIS
 ![](https://github.com/ShivaniSharma11/ShivaniProject/blob/master/Images/Swot.png)
 
+# Define the System
+  Project for COVID-19 Diagnosis
+  
 # 4W's and 1'H
 ## Who:
 This project can be used in hospitals which will give a relief to doctors and saves the time of doctors as well patients.
