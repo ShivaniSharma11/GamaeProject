@@ -2,5 +2,5 @@
 
 ## SDLC Activity Based Learning
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
+Build | Code Quality | Unity | [Git Inspector]
 ------ | ------------ | ------ | -------------------------------------
