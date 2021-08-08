@@ -1,0 +1,381 @@
+from google.colab import drive
+drive.mount('/content/gdrive', force_remount=True)
+
+import pandas as pd
+import numpy as np
+import os
+import glob
+import tensorflow as tf
+from os import listdir
+from os.path import isfile, join, isdir
+from sklearn import preprocessing
+from tensorflow import keras
+from keras.optimizers import Adam
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, MaxPooling2D, Activation , Dropout, Input,concatenate
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+from keras.applications.vgg16 import VGG16
+from tensorflow.keras import layers
+
+from keras.layers.advanced_activations import LeakyReLU
+from keras.models import Model
+from keras.callbacks import ModelCheckpoint
+   
+print('TensorFlow version:', tf.__version__)
+print('Is using GPU?', tf.test.is_gpu_available())
+
+import shutil 
+import os 
+import glob
+
+print(len(os.listdir("/content/gdrive/My Drive/COVID-19 Radiography Database/Images/XNegative/")))
+print(len(os.listdir("/content/gdrive/My Drive/COVID-19 Radiography Database/Images/XPositive/")))
+print(len(os.listdir("/content/gdrive/My Drive/Original CT Scans/pCT/")))
+print(len(os.listdir("/content/gdrive/My Drive/Original CT Scans/nCT/")))
+
+# XRAY Images Positive
+
+from keras.preprocessing import image
+X_pos = []
+X_P_label =[]
+c = 0
+for file in glob.glob("/content/gdrive/My Drive/COVID-19 Radiography Database/Images/XPositive/*.png") :
+    if c == 1260:
+        break
+    else:
+        m = os.path.basename(file)
+        label = m.split('.')[0]
+        
+        X_P_label.append(label)
+        img = image.load_img(file,target_size=(64,64,3))
+        img = image.img_to_array(img)
+        img = img/255
+        X_pos.append(img)
+        XPos = np.array(X_pos)
+        c =c+1
+
+XPos[0]
+
+# XRAY Images Negative
+from keras.preprocessing import image
+X_Neg = []
+X_N_label =[]
+c1 = 0
+for file1 in glob.glob("/content/gdrive/My Drive/COVID-19 Radiography Database/Images/XNegative/*.png") :
+    if c1 == 1260:
+        break
+    else:
+        m = os.path.basename(file1)
+        N_label = m.split('.')[0]
+        X_N_label.append(N_label)
+        img1 = image.load_img(file1,target_size=(64,64,3))
+        img1 = image.img_to_array(img1)
+        img1 = img1/255
+        X_Neg.append(img1)
+        XNeg = np.array(X_Neg)
+        c1 =c1 +1
+
+XNeg[0]
+
+# CT Images Negative
+from keras.preprocessing import image
+CT_Neg = []
+CT_N_label =[]
+c2 = 0
+for file2 in glob.glob("/content/gdrive/My Drive/Original CT Scans/nCT/*.jpg") :
+    if c2 == 1260:
+        break
+    else:
+        m = os.path.basename(file2)
+        C_label = m.split('.')[0]
+        CT_N_label.append(C_label)
+        img2 = image.load_img(file2,target_size=(64,64,3))
+        img2 = image.img_to_array(img2)
+        img2 = img2/255
+        CT_Neg.append(img2)
+        C_Neg = np.array(CT_Neg)
+        c2 =c2 +1
+
+C_Neg[0]
+
+# CT Images Positive
+from keras.preprocessing import image
+CT_P = []
+CT_P_label =[]
+c3 = 0
+for file3 in glob.glob("/content/gdrive/My Drive/Original CT Scans/pCT/*.jpg") :
+    if c3 == 1260:
+        break
+    else:
+        m = os.path.basename(file3)
+        CP_label = m.split('.')[0]
+        CT_P_label.append(CP_label)
+        img3 = image.load_img(file3,target_size=(64,64,3))
+        img3 = image.img_to_array(img3)
+        img3 = img3/255
+        CT_P.append(img3)
+        CP = np.array(CT_P)
+        c3 =c3 +1
+
+CP[0]
+
+import numpy as np
+XRAY = np.concatenate((XPos, XNeg))
+XRAY_label = X_P_label + X_N_label
+
+CT = np.concatenate((CP, C_Neg))
+CT_label = CT_P_label + CT_N_label
+
+print(len(XRAY))
+print(len(CT))
+print(len(XRAY_label))
+print(len(CT_label))
+
+#print(CT_label)
+import numpy
+t = []
+for i in CT_label:
+    l = i.split(',')[0]
+    if l.startswith('pCT'):
+        t.append(1)  
+    else :
+      t.append(0)
+CTlabel = t
+#CTlabel = numpy.array(t)
+
+
+##############################################
+
+#print(XRAY_label)
+
+k = []
+for i in XRAY_label:
+    l = i.split(',')[0]
+    if l.startswith('a'):
+        k.append(1)  
+    else :
+      k.append(0)
+
+Xlabel = k
+#Xlabel = numpy.array(k)
+#Xlabel
+
+#print(Xlabel)
+#print(CTlabel)
+
+if type(CT) == tuple:
+    print("a is a tuple")
+else:
+    print("a is a list")
+	
+print(XRAY.shape)
+print(CT.shape)
+print(Xlabel)
+print(CTlabel)
+
+# 
+XRAY =numpy.array(XRAY)
+CT =numpy.array(CT)
+
+#Xlabel = Xlabel/255
+#CTlabel = CTlabel/255
+
+from sklearn.model_selection import train_test_split
+Xtrain, Xtest, Ytrain, Ytest = train_test_split(XRAY,Xlabel , train_size = 0.8, random_state = 42,shuffle=True)
+#Xtrain,Xvalid,Ytrain,Yvalid = train_test_split(Xtrain,Ytrain,test_size=0.3,random_state=0,shuffle=True)
+
+Xtrain = numpy.array(Xtrain)
+Xtest = numpy.array(Xtest)
+#Ytrain = numpy.array(Ytrain)
+#Ytest = numpy.array(Ytest)
+#Xvalid = numpy.array(Xvalid)
+#Yvalid = numpy.array(Yvalid)
+
+Ctrain, Ctest, CYtrain, CYtest = train_test_split(CT,CTlabel,  train_size = 0.8, random_state = 42,shuffle=True)
+#Ctrain,Cvalid,CYtrain,CYvalid = train_test_split(Ctrain,CYtrain,test_size=0.3,random_state=0,shuffle=True)
+
+Ctrain = numpy.array(Ctrain)
+Ctest = numpy.array(Ctest)
+#CYtrain = numpy.array(CYtrain)
+#CYtest = numpy.array(CYtest)
+#Cvalid = numpy.array(Cvalid)
+#CYvalid = numpy.array(CYvalid)
+
+from keras.utils.np_utils import to_categorical
+Ytest
+Ytest = to_categorical(Ytest)
+Ytest
+print(Ytrain)
+#print(Yvalid)
+
+from keras.layers import Flatten, Dense, Activation, Conv2D, MaxPooling2D, Dropout, BatchNormalization
+from keras.models import load_model, Sequential
+from keras.callbacks import EarlyStopping,ReduceLROnPlateau, ModelCheckpoint
+from keras.preprocessing.image import ImageDataGenerator
+from keras.layers import GaussianNoise
+from keras.layers import Dropout
+import matplotlib.pyplot as plt
+from keras.layers import Conv2D, GlobalMaxPooling2D, Input, Dense, Flatten, concatenate
+from keras.models import Model
+import numpy as np
+#del model
+
+Ximg_input = Input(shape=(64,64,3))  ## branch 1 with image input
+x = Conv2D(16, (3, 3),activation='relu')(Ximg_input)
+x = BatchNormalization()(x)
+x = Dropout(0.1)(x)
+x = Conv2D(32, (3, 3),activation='relu')(x)
+x = BatchNormalization()(x)
+x = Dropout(0.3)(x)
+x = Conv2D(32, (3, 3),activation='relu')(x)
+x = BatchNormalization()(x)
+x = Conv2D(64, (3, 3),activation='relu')(x)
+x=BatchNormalization()(x)
+x = Dropout(0.2)(x)
+x = Conv2D(64, (3, 3),activation='relu')(x)
+x = Dropout(0.1)(x)
+x = Flatten()(x)
+out_a = Dense(2)(x)
+
+CTimg_input = Input(shape=(64,64, 3))  ## branch 1 with image input
+x1 = Conv2D(16, (3, 3),activation='relu')(CTimg_input)
+x1 = BatchNormalization()(x1)
+x1 = Dropout(0.1)(x1)
+x1 = Conv2D(32, (3, 3),activation='relu')(x1)
+x1 = BatchNormalization()(x1)
+x1 = Dropout(0.3)(x1)
+x1 = Conv2D(32, (3, 3),activation='relu')(x1)
+x1 = BatchNormalization()(x1)
+x1 = Conv2D(64, (3, 3),activation='relu')(x1)
+x1=BatchNormalization()(x1)
+x1 = Dropout(0.2)(x1)
+x1 = Conv2D(64, (3, 3),activation='relu')(x1)
+x1 = Dropout(0.1)(x1)
+x1 = Flatten()(x1)
+out_b = Dense(2)(x1)
+
+concatenated = concatenate([out_a,out_b])    ## concatenate the two branches
+out = Dense(2, activation='softmax')(concatenated)
+model = Model([Ximg_input,CTimg_input], out)
+#print(model.summary())
+
+from keras.utils.np_utils import to_categorical
+Ytrain =to_categorical(Ytrain,num_classes =2)
+CYtrain =to_categorical(CYtrain,num_classes =2)
+#y2 = to_categorical(y2)
+#print(y2)
+
+print(Xtrain.shape)
+print(Ctrain.shape)
+print(Ytrain.shape)
+print(CYtrain.shape)
+print(Xtest.shape)
+print(Ctest.shape)
+
+
+
+X = [Xtrain[1:2016,:,:,:],Ctrain[1:2016,:,:,:]]
+y = Ytrain[1:2016,:]
+
+#X1 =[Xvalid[1:480,:,:,:],Cvalid[1:480,:,:,:]] 
+#y1 =Yvalid[1:480,:]
+
+X2 = [Xtest[1:504,:,:,:], Ctest[1:504,:,:,:]]
+y2 = Ytest[1:504]
+
+
+y_test = y2
+y_test.shape
+
+from keras.optimizers import Adadelta
+optimizer = Adadelta(lr=0.0025, epsilon = 1e-8 )
+#beta_1 = .9, beta_2 = .999
+# Compile the model
+model.compile(optimizer = optimizer , loss = "categorical_crossentropy", metrics=["accuracy","mae"])
+# Set a learning rate annealer
+
+learning_rate_reduction = ReduceLROnPlateau(monitor='val_loss', 
+                                            patience=2, 
+                                            verbose=1, 
+                                            factor=0.2, 
+                                            min_lr=0.00001)
+
+#hist=model.fit(X, y,batch_size=16, epochs=30, verbose=1,validation_split = 0.3,callbacks=[learning_rate_reduction],)
+
+
+path = '/content/gdrive/My Drive/Dual_Input_Model/trailmain.000.h5'
+model.save(
+    path,
+    overwrite=True,
+    include_optimizer=True,
+    save_format="h5",
+    signatures=None,
+    options=None,
+    save_traces=True,
+)
+
+
+#y2 = to_categorical(y2)
+m=model.evaluate(X2,y2)
+#X2
+
+model1 = tf.keras.models.load_model('/content/gdrive/My Drive/Dual_Input_Model/trailmain.000.h5')
+model1.summary()
+
+import seaborn as sns
+import sklearn.metrics as metrics
+from sklearn.metrics import confusion_matrix
+import pylab as plt
+from sklearn.metrics import roc_curve
+from sklearn.metrics import roc_auc_score
+
+
+classes_final =  ['Negative','Positive']
+
+predicted_classes = model1.predict(X2)
+predicted_classes = np.argmax(np.round(predicted_classes),axis=1) 
+tar = np.argmax(np.round(y2),axis=1)
+from sklearn.metrics import classification_report,confusion_matrix
+target_names = ["Class {}".format(i) for i in range(2)]
+print(classification_report(tar, predicted_classes, labels=None, target_names=None))
+
+
+"""
+y = to_categorical(y_test)
+pred = model1.predict(X2)
+cm = metrics.confusion_matrix(y, pred)
+sns.heatmap(cm, annot=True, cmap=plt.cm.Blues, 
+            cbar=False)
+"""
+
+#y = to_categorical(y_test)
+y_pred=model1.predict(X2) 
+y_pred=np.argmax(y_pred, axis=1)
+y=np.argmax(y_test, axis=1)
+cm = confusion_matrix(y, y_pred)
+
+fig, ax = plt.subplots()
+sns.heatmap(cm, annot=True, fmt='d', ax=ax, cmap=plt.cm.Blues, 
+            cbar=False)
+ax.set(xlabel="Pred", ylabel="True", xticklabels=classes_final, 
+       yticklabels=classes_final, title="Confusion matrix")
+plt.yticks(rotation=0)
+
+acc = hist.history['accuracy']
+val_acc = hist.history['val_accuracy']
+loss = hist.history['loss']
+val_loss = hist.history['val_loss']
+
+epochs_range = range(30)
+#print(len(acc))
+#print(epochs_range)
+
+plt.figure(figsize=(15, 15))
+plt.subplot(2, 2, 1)
+plt.plot(epochs_range, acc, label='Training Accuracy')
+plt.plot(epochs_range, val_acc, label='Validation Accuracy')
+plt.plot(epochs_range, loss, label='Training Loss')
+plt.plot(epochs_range, val_loss, label='Vlidation Loss')
+plt.legend(loc='lower right')
+plt.title('Training and Validation Accuracy')
+
