@@ -125,7 +125,9 @@ ID | Description | Status(Implemented / Future)
 05 |  Test the Model  | Implemented
 
 ## Low level Requirements
+
 ID | Description | Status(Implemented / Future)
+
 ------------ | ------------- | ----------
 01 | Load dataset of images from the path | Implemented
 02 | Preprocessing of each image | Implemented
